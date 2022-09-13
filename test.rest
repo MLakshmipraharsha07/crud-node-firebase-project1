@@ -1,0 +1,35 @@
+### GET FRUITs
+GET http://localhost:8383/fruit
+
+### GET FRUIT
+GET http://localhost:8383/fruit/apple
+
+
+### ADD A FRUIT
+POST http://localhost:8383/addfruit
+Content-Type: application/json
+
+{
+    "name": "strawberry",
+    "status": "pink"
+}
+
+### UPDATE STATUS OF A FRUIT
+PATCH http://localhost:8383/changestatus
+Content-Type: application/json
+
+{
+    "name": "watermelon",
+    "newStatus": "green"
+}
+
+
+###DELETE A FRUIT
+DELETE http://localhost:8383/fruit
+Content-Type: application/json
+
+{
+    "name": "banana"
+}
+
+
